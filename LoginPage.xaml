@@ -1,1 +1,67 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Edutastic.LoginPage">
+    
+    <Grid Padding="30">
+
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            Spacing="24">
+            
+            <VerticalStackLayout Spacing="6">
+
+                <Label
+                    Text="Edutastic"
+                    FontSize="34"
+                    FontAttributes="Bold"
+                    TextColor="#222" />
+
+                <Label
+                    Text="Blijf jezelf ontwikkelen"
+                    FontSize="15"
+                    TextColor="#777" />
+
+            </VerticalStackLayout>
+            
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Gebruikersnaam"
+                BackgroundColor="White"
+                TextColor="#222"
+                PlaceholderColor="#999"
+                HeightRequest="55"
+                Margin="0,10,0,0" />
+            
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Wachtwoord"
+                IsPassword="True"
+                BackgroundColor="White"
+                TextColor="#222"
+                PlaceholderColor="#999"
+                HeightRequest="55" />
+
+            <Button
+                Text="Login"
+                HeightRequest="55"
+                BackgroundColor="#222"
+                TextColor="White"
+                CornerRadius="14"
+                Clicked="OnLoginClicked"
+                FontAttributes="Bold" />
+            
+            <Button
+                x:Name="Registreren"
+                Text="Maak een account aan!" 
+                SemanticProperties.Hint="Click to register"
+                Clicked="OnRegisterButtonClicked"
+                BackgroundColor="#222"
+                TextColor="White"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

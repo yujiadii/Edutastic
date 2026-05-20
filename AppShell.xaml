@@ -5,10 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Edutastic"
     Title="Edutastic">
-
+    
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="LoginPage"
+        ContentTemplate="{DataTemplate local:LoginPage}" />
+    
+    <TabBar>
+    <ShellContent
+        Title="Dashboard"
+        Route="Dashboard"
+        ContentTemplate="{DataTemplate local:Dashboard}" />
+    </TabBar>
 
 </Shell>
